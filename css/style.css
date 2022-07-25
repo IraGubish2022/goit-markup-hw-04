@@ -79,8 +79,8 @@ body {
   margin-right: 93px;
 }
 .logo-link {
-  fill: currentColor;
   margin-right: 10px;
+  fill: currentColor;
 }
 .logo-contacts {
   display: flex;
@@ -88,7 +88,7 @@ body {
 }
 .logo-link:hover,
 .logo-link:focus {
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 .site-nav {
   display: flex;
@@ -349,6 +349,11 @@ button:focus {
   background: #ffffff;
   border: 1px solid #eeeeee;
 }
+.flex-element:hover,
+.flex-element:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .flex-element:nth-child(3n) {
   margin-right: 0;
 }
@@ -360,7 +365,6 @@ button:focus {
   text-align: start;
 }
 .thumb {
-  width: 270px;
   height: 120px;
   border-radius: 4px;
   background-color: #f5f4fa;
@@ -370,11 +374,6 @@ button:focus {
   align-items: center;
 }
 .logo-item {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 .flex-element-link {
   width: 270px;
@@ -427,14 +426,12 @@ button:focus {
   padding-bottom: 20px;
   padding-left: 24px;
 }
-.description {
+.flex-element-menu {
   width: 170px;
-  height: 72px;
+  height: 92px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.flex-element-menu {
   margin-right: 30px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -459,6 +456,7 @@ button:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 .social-list-link-footer {
   display: flex;
@@ -482,4 +480,9 @@ button:focus {
 }
 .list-footer {
   margin-right: 70px;
+}
+.social-list-footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
